@@ -1,6 +1,10 @@
 name: 'Header Check'
 description: 'Check for the presence of specific HTTP response headers and their values'
-icon: 'check-square'
+
+branding:
+  icon: 'check-square'
+  color: 'orange'
+
 inputs:
   urlToTest:
     description: 'Endpoint to check for HTTP response headers'
