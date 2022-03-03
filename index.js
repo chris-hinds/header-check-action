@@ -15,7 +15,7 @@ async function run() {
     const expectedHeader = path([expectedHttpHeader], headers);
 
     if (!expectedHeader) throw new Error(
-        `${expectedHttpHeader}: Not found in the HTTP response headers for ${endpointToTest}`
+        `${expectedHttpHeader}: Not found in the HTTP response headers for ${urlToTest}`
       );
 
     if (expectedHeader !== expectedHttpHeaderValue) throw new Error(
