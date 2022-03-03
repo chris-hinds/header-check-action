@@ -1,0 +1,10 @@
+name: 'Header Check'
+description: 'Check for the presence of specific HTTP response headers and their values'
+inputs:
+  endpoint:
+    description: 'Endpoint to check for HTTP response headers'
+    required: true
+    default: 'World'
+runs:
+  using: 'node16'
+  main: 'index.js'
