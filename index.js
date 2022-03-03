@@ -18,9 +18,13 @@ async function run() {
         `${expectedHttpHeader}: Not found in the HTTP response headers for ${endpointToTest}`
       );
 
+    if (expectedHeader !== expectedHttpHeaderValue) throw new Error(
+        `Returned header does not match the expected value, actual value is: ${expectedHeader}`
+      );
+
     if (expectedHeader === expectedHttpHeaderValue) {
-      core.setOutput("success", true);
-      return;
+        core.setOutput("success", true);
+        return;
     }
 
     throw new Error("Something went wrong");
