@@ -1,5 +1,6 @@
 name: 'Header Check'
 description: 'Check for the presence of specific HTTP response headers and their values'
+icon: 'check-square'
 inputs:
   endpoint:
     description: 'Endpoint to check for HTTP response headers'
