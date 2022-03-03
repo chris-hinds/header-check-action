@@ -2,8 +2,14 @@ name: 'Header Check'
 description: 'Check for the presence of specific HTTP response headers and their values'
 icon: 'check-square'
 inputs:
-  endpoint:
+  urlToTest:
     description: 'Endpoint to check for HTTP response headers'
+    required: true
+  expectedHttpHeader:
+    description: 'Expected response header name'
+    required: true
+  expectedHttpHeaderValue:
+    description: 'Expected value for the provided response header'
     required: true
 outputs:
   success:
