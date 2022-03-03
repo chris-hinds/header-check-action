@@ -4,7 +4,9 @@ inputs:
   endpoint:
     description: 'Endpoint to check for HTTP response headers'
     required: true
-    default: 'World'
+outputs:
+  success:
+    description: True or False value based on the finding of the expected header and its value
 runs:
   using: 'node16'
   main: 'index.js'
